@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="body">
+    <div id="search-container">
+        <button id="close-search" onclick="toggleSearch()">Close</button>
+        <div id="search-section">
+            <input type="text" id="search-input" placeholder="Enter a city name">
+            <img src="./res/search-white.png" alt=search class="search-icon" id="search-go-icon"
+                onclick="setCityList()">
+        </div>
+        <div id="search-results">
+            <ul id="search-list">
+                <!-- Search results will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <div id="hero">
+        <div class="container" id="upper">
+            <img src="./res/search-white.png" alt=search class="search-icon" id="search-screen-icon"
+                onclick="toggleSearch()">
+            <h2 id="city-display"> Vancouver </h2>
+            <h4 id='country-display'> Canada </h4>
+            <div class='weather-row'>
+                <div class="text-overlay">
+                    <h1 id = "main-temperature">21</h1>
+                    <h1 id = 'main-temperature-unit'>°C </h1>
+                </div>
+                <img src="./res/sun.png" alt=sunnyImage class="weather-image" id="main-weather-image">
+            </div>
+            <div class="date-row">
+                <h2 class="today"> TODAY </h2>
+                <h2 class="today-date" id = "today-date-display"> JULY 27 </h2>
+            </div>
+            <div class="switch-container">
+                <label for="toggle-switch" id="C">C°</label>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-switch">
+                    <span class="slider"></span>
+                </label>
+                <label for="toggle-switch" id="F">F°</label>
+            </div>
+        </div>
+        <div class="container" id="middle">
+            <ul class="daily-row" id="daily-temperatures">
+                <li>
+                    <p> 19° </p>
+                </li>
+                <li>
+                    <p> 19° </p>
+                </li>
+                <li>
+                    <p> 22° </p>
+                </li>
+                <li>
+                    <p> 25° </p>
+                </li>
+                <li>
+                    <p> 24° </p>
+                </li>
+            </ul>
+            <ul class="daily-row" id="daily-symbols">
+                <li>
+                    <img src="./res/cloudy.png" alt=cloudyImage class="row-icon">
+                </li>
+                <li>
+                    <img src="./res/cloudy.png" alt=cloudyImage class="row-icon">
+                </li>
+                <li>
+                    <img src="./res/rain.png" alt=rainImage class="row-icon">
+                </li>
+                <li>
+                    <img src="./res/sun.png" alt=sunnyImage class="row-icon">
+                </li>
+                <li>
+                    <img src="./res/snow.png" alt=snowImage class="row-icon">
+                </li>
+            </ul>
+            <ul class="daily-row" id=daily-times>
+                <li>
+                    <p> 12am </p>
+                </li>
+                <li>
+                    <p> 6am </p>
+                </li>
+                <li>
+                    <p> 12pm </p>
+                </li>
+                <li>
+                    <p> 6pm </p>
+                </li>
+                <li>
+                    <p> 12am </p>
+                </li>
+            </ul>
+        </div>
+        <div class="container" id="lower">
+            <div class="row">
+                <p class="date"> July 28 </p>
+                <p class="degree"> L: 19° -  H: 19° </p>
+                <img src="./res/cloudy.png" alt="Cloudy" class="row-icon">
+            </div>
+            <div class="row">
+                <p class="date"> July 29 </p>
+                <p class="degree"> L: 19° -  H: 19° </p>
+                <img src="./res/cloudy.png" alt="Cloudy" class="row-icon">
+            </div>
+            <div class="row">
+                <p class="date"> July 30 </p>
+                <p class="degree"> L: 19° -  H: 19° </p>
+                <img src="./res/cloudy.png" alt="Cloudy" class="row-icon">
+            </div>
+            <div class="row">
+                <p class="date"> July 31 </p>
+                <p class="degree"> L: 19° -  H: 19° </p>
+                <img src="./res/cloudy.png" alt="Cloudy" class="row-icon">
+            </div>
+            <div class="row">
+                <p class="date"> August 1 </p>
+                <p class="degree"> L: 19° -  H: 19° </p>
+                <img src="./res/cloudy.png" alt="Cloudy" class="row-icon">
+            </div>
+            <div class="row">
+                <p class="date"> August 2 </p>
+                <p class="degree"> L: 19° -  H: 19° </p>
+                <img src="./res/cloudy.png" alt="Cloudy" class="row-icon">
+            </div>
+            <div class="row">
+                <p class="date"> August 3 </p>
+                <p class="degree"> L: 19° -  H: 19° </p>
+                <img src="./res/cloudy.png" alt="Cloudy" class="row-icon">
+            </div>
+        </div>
+        <div class="footer">
+            <p id="last-updated"> Last Updated: 01-25-25 19:25 PST </p>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
