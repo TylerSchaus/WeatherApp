@@ -1,6 +1,6 @@
 # Weather App
 
-This project was independently developed project using HTML, CSS, and JavaScript to familiarize myself with these languages. 
+This was an independently developed project using HTML, CSS, and JavaScript to familiarize myself with these languages. 
 
 I just started learning HTML, CSS, and JS within the last week and this project helped to put together the skills I learned, further refine them, and learn more. 
 
